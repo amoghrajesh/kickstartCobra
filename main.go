@@ -16,11 +16,9 @@ limitations under the License.
 package main
 
 import (
-	"fmt"
 	"mycli/cmd"
 )
 
 func main() {
-	fmt.Println("In the main fucntion")
 	cmd.Execute()
 }
