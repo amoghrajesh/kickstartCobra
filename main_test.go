@@ -8,7 +8,7 @@ import (
 
 func TestCliCommand(t *testing.T) {
 	command := cmd.GetRootCmd()
-	command.SetArgs([]string{"hello", "even", "1", "2", "3"})
+	command.SetArgs([]string{"hello", "even", "1", "2", "3", "4"})
 	exitCode := command.Execute()
 
 	assert.Equal(t, exitCode, nil)
