@@ -31,7 +31,13 @@ var rootCmd = &cobra.Command{
 	Short: "My first CLI application",
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	Run: func(cmd *cobra.Command, args []string) { fmt.Println("Welcome to mycli") },
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("Welcome to mycli")
+	},
+}
+
+func GetRootCmd() *cobra.Command {
+	return rootCmd
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.

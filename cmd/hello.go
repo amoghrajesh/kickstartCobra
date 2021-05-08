@@ -43,13 +43,14 @@ to quickly create a Cobra application.`,
 	},
 }
 
-func addInts(args []string) {
+func addInts(args []string) int {
 	sum := 0
 	for _, nums := range args {
 		v, _ := strconv.Atoi(nums)
 		sum += v
 	}
 	fmt.Println("Sum of numbers is", sum)
+	return sum
 }
 
 func addFloats(args []string) {
